@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/leonardomeza87/pokedex/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/leonardomeza87/pokedex/static/js/main.7502a99f.chunk.js",
+    "main.js.map": "/leonardomeza87/pokedex/static/js/main.7502a99f.chunk.js.map",
+    "runtime-main.js": "/leonardomeza87/pokedex/static/js/runtime-main.8f9227dd.js",
+    "runtime-main.js.map": "/leonardomeza87/pokedex/static/js/runtime-main.8f9227dd.js.map",
+    "static/js/2.370fe0b8.chunk.js": "/leonardomeza87/pokedex/static/js/2.370fe0b8.chunk.js",
+    "static/js/2.370fe0b8.chunk.js.map": "/leonardomeza87/pokedex/static/js/2.370fe0b8.chunk.js.map",
+    "static/js/3.6bf52325.chunk.js": "/leonardomeza87/pokedex/static/js/3.6bf52325.chunk.js",
+    "static/js/3.6bf52325.chunk.js.map": "/leonardomeza87/pokedex/static/js/3.6bf52325.chunk.js.map",
+    "index.html": "/leonardomeza87/pokedex/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/leonardomeza87/pokedex/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.370fe0b8.chunk.js.LICENSE.txt": "/leonardomeza87/pokedex/static/js/2.370fe0b8.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/leonardomeza87/pokedex/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f9227dd.js",
+    "static/js/2.370fe0b8.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.7502a99f.chunk.js"
+  ]
+}
