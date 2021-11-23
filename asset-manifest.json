@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/pokedex/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/pokedex/static/js/main.7502a99f.chunk.js",
-    "main.js.map": "/pokedex/static/js/main.7502a99f.chunk.js.map",
-    "runtime-main.js": "/pokedex/static/js/runtime-main.aa1c55b6.js",
-    "runtime-main.js.map": "/pokedex/static/js/runtime-main.aa1c55b6.js.map",
-    "static/js/2.370fe0b8.chunk.js": "/pokedex/static/js/2.370fe0b8.chunk.js",
-    "static/js/2.370fe0b8.chunk.js.map": "/pokedex/static/js/2.370fe0b8.chunk.js.map",
-    "static/js/3.6bf52325.chunk.js": "/pokedex/static/js/3.6bf52325.chunk.js",
-    "static/js/3.6bf52325.chunk.js.map": "/pokedex/static/js/3.6bf52325.chunk.js.map",
+    "main.css": "/pokedex/static/css/main.d87cccf2.chunk.css",
+    "main.js": "/pokedex/static/js/main.d27060d2.chunk.js",
+    "main.js.map": "/pokedex/static/js/main.d27060d2.chunk.js.map",
+    "runtime-main.js": "/pokedex/static/js/runtime-main.1875d59b.js",
+    "runtime-main.js.map": "/pokedex/static/js/runtime-main.1875d59b.js.map",
+    "static/js/2.4e862e13.chunk.js": "/pokedex/static/js/2.4e862e13.chunk.js",
+    "static/js/2.4e862e13.chunk.js.map": "/pokedex/static/js/2.4e862e13.chunk.js.map",
+    "static/js/3.e8631535.chunk.js": "/pokedex/static/js/3.e8631535.chunk.js",
+    "static/js/3.e8631535.chunk.js.map": "/pokedex/static/js/3.e8631535.chunk.js.map",
     "index.html": "/pokedex/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/pokedex/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.370fe0b8.chunk.js.LICENSE.txt": "/pokedex/static/js/2.370fe0b8.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/pokedex/static/media/logo.6ce24c58.svg"
+    "static/css/main.d87cccf2.chunk.css.map": "/pokedex/static/css/main.d87cccf2.chunk.css.map",
+    "static/js/2.4e862e13.chunk.js.LICENSE.txt": "/pokedex/static/js/2.4e862e13.chunk.js.LICENSE.txt",
+    "static/media/001.961a737a.png": "/pokedex/static/media/001.961a737a.png",
+    "static/media/grass.6565d9b3.png": "/pokedex/static/media/grass.6565d9b3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa1c55b6.js",
-    "static/js/2.370fe0b8.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.7502a99f.chunk.js"
+    "static/js/runtime-main.1875d59b.js",
+    "static/js/2.4e862e13.chunk.js",
+    "static/css/main.d87cccf2.chunk.css",
+    "static/js/main.d27060d2.chunk.js"
   ]
 }
