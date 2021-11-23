@@ -1,0 +1,31 @@
+@import-normalize;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  background-color: #456;
+}
+
+// Disable scrolling on mobile
+// .no-touch-action {
+//   touch-action: none;
+// }
+
+ul {
+  list-style: none;
+}

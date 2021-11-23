@@ -1,0 +1,81 @@
+.card {
+  width: 416px;
+  height: 240px;
+  border-radius: 1rem;
+
+  display: grid;
+  grid-template-columns: 224px 192px;
+  grid-template-rows: 240px;
+
+  overflow: hidden;
+  margin: 2rem;
+
+  .pictures {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .background {
+      position: absolute;
+
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .pokemon {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .info {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      text-align: right;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 24px;
+      text-align: right;
+    }
+  }
+}
+
+.type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+  margin-left: auto;
+  color: #fff;
+
+  &.grass {
+    background: $grass-type-bg;
+  }
+  &.poison {
+    background: $poison-type-bg;
+  }
+}
