@@ -17,24 +17,24 @@ import bgRock from "../../images/backgrounds/rock.jpg";
 import bgSteel from "../../images/backgrounds/steel.jpg";
 import bgWater from "../../images/backgrounds/water.jpg";
 
-// import svgBug from "../../images/icons/bug.svg";
-// import svgDark from "../../images/icons/dark.svg";
-// import svgDragon from "../../images/icons/dragon.svg";
-// import svgElectric from "../../images/icons/electric.svg";
-// import svgFairy from "../../images/icons/fairy.svg";
-// import svgFighting from "../../images/icons/fighting.svg";
-// import svgFire from "../../images/icons/fire.svg";
-// import svgFlying from "../../images/icons/flying.svg";
-// import svgGhost from "../../images/icons/ghost.svg";
-// import svgGrass from "../../images/icons/grass.svg";
-// import svgGround from "../../images/icons/ground.svg";
-// import svgIce from "../../images/icons/ice.svg";
-// import svgNormal from "../../images/icons/normal.svg";
-// import svgPoison from "../../images/icons/poison.svg";
-// import svgPsychic from "../../images/icons/psychic.svg";
-// import svgRock from "../../images/icons/rock.svg";
-// import svgSteel from "../../images/icons/steel.svg";
-// import svgWater from "../../images/icons/water.svg";
+import { ReactComponent as SVGBug } from "../../images/icons/bug.svg";
+import { ReactComponent as SVGDark } from "../../images/icons/dark.svg";
+import { ReactComponent as SVGDragon } from "../../images/icons/dragon.svg";
+import { ReactComponent as SVGElectric } from "../../images/icons/electric.svg";
+import { ReactComponent as SVGFairy } from "../../images/icons/fairy.svg";
+import { ReactComponent as SVGFighting } from "../../images/icons/fighting.svg";
+import { ReactComponent as SVGFire } from "../../images/icons/fire.svg";
+import { ReactComponent as SVGFlying } from "../../images/icons/flying.svg";
+import { ReactComponent as SVGGhost } from "../../images/icons/ghost.svg";
+import { ReactComponent as SVGGrass } from "../../images/icons/grass.svg";
+import { ReactComponent as SVGGround } from "../../images/icons/ground.svg";
+import { ReactComponent as SVGIce } from "../../images/icons/ice.svg";
+import { ReactComponent as SVGNormal } from "../../images/icons/normal.svg";
+import { ReactComponent as SVGPoison } from "../../images/icons/poison.svg";
+import { ReactComponent as SVGPsychic } from "../../images/icons/psychic.svg";
+import { ReactComponent as SVGRock } from "../../images/icons/rock.svg";
+import { ReactComponent as SVGSteel } from "../../images/icons/steel.svg";
+import { ReactComponent as SVGWater } from "../../images/icons/water.svg";
 
 import Type from "./Type";
 import { useEffect, useState } from "react";
@@ -43,17 +43,28 @@ const Card = ({ url }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(url)
+    const ac = new AbortController();
+
+    fetch(url, { signal: ac.signal })
       .then((res) => res.json())
       .then((json) => {
         setData(json);
+      })
+      .catch((error) => {
+        console.log(error);
       });
+
+    return () => {
+      ac.abort(); // Abort fetch on unmount
+      setData(null);
+    };
   }, [url]);
 
   const [loaded, setLoaded] = useState(false);
 
   const [source, setSource] = useState(null);
   const [bgSource, setBgSource] = useState(null);
+  const [iconSource, setIconSource] = useState(null);
 
   useEffect(() => {
     if (data) {
@@ -66,9 +77,11 @@ const Card = ({ url }) => {
       switch (data.types[0].type.name) {
         case "bug":
           setBgSource(bgBug);
+          // setIconSource(svgBug);
           break;
         case "dark":
           setBgSource(bgDark);
+          // setIconSource(<svgDark />);
           break;
         case "dragon":
           setBgSource(bgDragon);
@@ -130,6 +143,27 @@ const Card = ({ url }) => {
     setLoaded(true);
   };
 
+  const tp = {
+    bug: <SVGBug />,
+    dark: <SVGDark />,
+    dragon: <SVGDragon />,
+    electric: <SVGElectric />,
+    fairy: <SVGFairy />,
+    fighting: <SVGFighting />,
+    fire: <SVGFire />,
+    flying: <SVGFlying />,
+    ghost: <SVGGhost />,
+    grass: <SVGGrass />,
+    ground: <SVGGround />,
+    ice: <SVGIce />,
+    normal: <SVGNormal />,
+    poison: <SVGPoison />,
+    psychic: <SVGPsychic />,
+    rock: <SVGRock />,
+    steel: <SVGSteel />,
+    water: <SVGWater />,
+  };
+
   return (
     <div className="card">
       {data && (
@@ -147,15 +181,17 @@ const Card = ({ url }) => {
                 loading="lazy"
               />
             </div>
+            <div className="icon">{tp[data.types[0].type.name]}</div>
           </div>
           <div className="info">
-            <div className="icon"></div>
-            {data.types.map((el, i) => {
-              return <Type type={el.type.name} key={i} />;
-            })}
+            <div className="types">
+              {data.types.map((el, i) => {
+                return <Type type={el.type.name} key={i} />;
+              })}
+            </div>
 
             <h2>{`#${data.id}`}</h2>
-            <h3>{data.name}</h3>
+            <h3>{data.name[0].toUpperCase() + data.name.slice(1)}</h3>
           </div>
         </>
       )}

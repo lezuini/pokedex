@@ -10,7 +10,7 @@ const CardGenerator = ({ data }) => {
       {data &&
         data.results &&
         data.results.map((el, i) => {
-          return <Card url={el.url} key={i} />;
+          return <Card url={el.url} key={el.url} />;
         })}
     </div>
   );

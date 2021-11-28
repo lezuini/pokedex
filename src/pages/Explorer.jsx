@@ -73,10 +73,12 @@ const Explorer = () => {
   }, [offset, limit]);
 
   const goForward = () => {
-    setSearchParams({
-      offset: offset + limit,
-      limit: limit,
-    });
+    if (offset + limit < maxNumberOfResults) {
+      setSearchParams({
+        offset: offset + limit,
+        limit: limit,
+      });
+    }
   };
 
   const goBack = () => {
@@ -98,9 +100,12 @@ const Explorer = () => {
       <CardGenerator data={data} />
 
       <nav>
-        <Link to="/">Inicio</Link>
-        <button onClick={goBack}>Atras</button>
-        <button onClick={goForward}>Adelante</button>
+        <Link to="/">Start</Link>
+        <button onClick={goBack}>{"<"}</button>
+        <button onClick={goForward}>{">"}</button>
+        <Link to={`/?offset=${maxNumberOfResults - limit}&limit=${limit}`}>
+          End
+        </Link>
       </nav>
     </div>
   );

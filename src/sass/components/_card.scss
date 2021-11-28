@@ -1,15 +1,19 @@
 .card {
-  width: 416px;
-  height: 240px;
+  width: 272px;
+  height: 384px;
   border-radius: 1rem;
 
   display: grid;
-  grid-template-columns: 224px 192px;
-  grid-template-rows: 240px;
+  grid-template-columns: 272px;
+  grid-template-rows: 224px 160px;
 
   overflow: hidden;
   margin: 2rem;
   color: #222;
+
+  position: relative;
+
+  cursor: pointer;
 
   .pictures {
     width: 100%;
@@ -27,6 +31,7 @@
 
       display: flex;
       justify-content: center;
+      align-items: center;
 
       img {
         height: 100%;
@@ -40,8 +45,17 @@
       width: 100%;
       height: 100%;
 
+      display: flex;
+      justify-content: center;
+
+      transition: filter 0.2s ease-in-out;
+
+      &:hover {
+        filter: brightness(1.125);
+      }
+
       img {
-        width: 100%;
+        // width: 100%;
         height: 100%;
         opacity: 0;
         transition: opacity 0.2s ease-in-out;
@@ -51,23 +65,65 @@
         }
       }
     }
+
+    .icon {
+      width: 64px;
+      height: 64px;
+
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      z-index: 20;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        content: "";
+
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #fff;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      svg {
+        position: relative;
+        z-index: 10;
+        width: 56px;
+        height: 56px;
+      }
+    }
   }
 
   .info {
     background-color: #fff;
     width: 100%;
     height: 100%;
-    padding: 1.5rem;
+    padding: 20px 1.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .types {
+      display: flex;
+      justify-content: flex-start;
+      // margin-bottom: 0.5rem;
+    }
 
     h2 {
       font-size: 32px;
       line-height: 32px;
-      text-align: right;
     }
     h3 {
       font-size: 24px;
       line-height: 24px;
-      text-align: right;
     }
   }
 }
@@ -77,11 +133,24 @@
   justify-content: center;
   align-items: center;
   width: min-content;
-  padding: 0.25rem 1rem;
+  height: 32px;
+  padding: 0 1rem;
   border-radius: 0.5rem;
-  margin: 0.25rem;
-  margin-left: auto;
+  margin-right: 0.5rem;
+  // margin: 0.25rem;
+  // margin-left: auto;
   color: #fff;
+
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.25);
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 18px;
+  }
 
   &.bug {
     background: $bug-type-bg;

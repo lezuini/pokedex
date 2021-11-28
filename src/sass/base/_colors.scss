@@ -4,74 +4,74 @@
 
 // ## Types Gradients
 
-$bug-type-c1: rgb(58, 94, 58);
+$bug-type-c1: #83c300;
 $bug-type-c2: green;
-$bug-type-bg: linear-gradient(to bottom, $bug-type-c1, $bug-type-c1);
+$bug-type-bg: $bug-type-c1;
 
-$dark-type-c1: rgb(37, 37, 37);
+$dark-type-c1: #5b5466;
 $dark-type-c2: green;
-$dark-type-bg: linear-gradient(to bottom, $dark-type-c1, $dark-type-c1);
+$dark-type-bg: $dark-type-c1;
 
-$dragon-type-c1: rgb(0, 125, 197);
+$dragon-type-c1: #006fc9;
 $dragon-type-c2: green;
 $dragon-type-bg: $dragon-type-c1;
 
-$electric-type-c1: rgb(255, 174, 0);
+$electric-type-c1: #fbd100;
 $electric-type-c2: green;
 $electric-type-bg: $electric-type-c1;
 
-$fairy-type-c1: rgb(255, 0, 191);
+$fairy-type-c1: #fb89eb;
 $fairy-type-c2: green;
 $fairy-type-bg: $fairy-type-c1;
 
-$fighting-type-c1: rgb(202, 160, 82);
+$fighting-type-c1: #e0306a;
 $fighting-type-c2: green;
 $fighting-type-bg: $fighting-type-c1;
 
-$fire-type-c1: rgb(206, 0, 0);
+$fire-type-c1: #ff9741;
 $fire-type-c2: green;
 $fire-type-bg: $fire-type-c1;
 
-$flying-type-c1: rgb(134, 177, 218);
+$flying-type-c1: #89aae3;
 $flying-type-c2: green;
 $flying-type-bg: $flying-type-c1;
 
-$ghost-type-c1: rgb(52, 58, 136);
+$ghost-type-c1: #4c6ab2;
 $ghost-type-c2: green;
 $ghost-type-bg: $ghost-type-c1;
 
-$grass-type-c1: rgb(0, 158, 0);
+$grass-type-c1: #38bf4b;
 $grass-type-c2: rgb(0, 110, 0);
-$grass-type-bg: linear-gradient(to bottom, $grass-type-c1, $grass-type-c1);
+$grass-type-bg: $grass-type-c1;
 
-$ground-type-c1: rgb(90, 59, 0);
+$ground-type-c1: #e87236;
 $ground-type-c2: green;
 $ground-type-bg: $ground-type-c1;
 
-$ice-type-c1: rgb(0, 204, 255);
+$ice-type-c1: #4cd1c0;
 $ice-type-c2: green;
 $ice-type-bg: $ice-type-c1;
 
-$normal-type-c1: rgb(151, 151, 151);
+$normal-type-c1: #919aa2;
 $normal-type-c2: green;
 $normal-type-bg: $normal-type-c1;
 
-$poison-type-c1: rgb(95, 51, 255);
+$poison-type-c1: #b567ce;
 $poison-type-c2: rgb(56, 24, 170);
-$poison-type-bg: linear-gradient(to bottom, $poison-type-c1, $poison-type-c1);
+$poison-type-bg: $poison-type-c1;
 
-$psychic-type-c1: rgb(183, 0, 255);
+$psychic-type-c1: #ff6675;
 $psychic-type-c2: green;
 $psychic-type-bg: $psychic-type-c1;
 
-$rock-type-c1: rgb(87, 87, 87);
+$rock-type-c1: #c8b686;
 $rock-type-c2: green;
 $rock-type-bg: $rock-type-c1;
 
-$steel-type-c1: rgb(48, 55, 68);
+$steel-type-c1: #5a8ea2;
 $steel-type-c2: green;
 $steel-type-bg: $steel-type-c1;
 
-$water-type-c1: rgb(0, 116, 194);
+$water-type-c1: #3692dc;
 $water-type-c2: green;
 $water-type-bg: $water-type-c1;

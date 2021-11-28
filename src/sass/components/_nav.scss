@@ -5,9 +5,27 @@ nav {
   display: flex;
   justify-content: center;
 
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+
   a,
   button {
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0 0.5rem;
+    color: #333;
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 18px;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #445566;
+      color: #fff;
+      border-color: transparent;
+    }
   }
 }
