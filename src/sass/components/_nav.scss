@@ -1,0 +1,13 @@
+nav {
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+
+  a,
+  button {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+  }
+}

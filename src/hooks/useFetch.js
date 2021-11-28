@@ -25,6 +25,7 @@ const API = "https://pokeapi.co/api/v2/";
 let ENDPOINT = "pokemon";
 
 const useFetch = () => {
+  // Logica de los parametros
   let [searchParams, setSearchParams] = useSearchParams();
 
   const getParam = (name) => {
@@ -59,6 +60,10 @@ const useFetch = () => {
     });
   }, [offset, limit]);
 
+  console.log(options);
+
+  // Logica de la peticion
+
   const [resp, setResp] = useState(null);
 
   useEffect(() => {
@@ -66,8 +71,10 @@ const useFetch = () => {
 
     if (options.pokemon) {
       url += options.pokemon;
-    } else if (options.offset !== undefined && options.limit !== undefined) {
+    } else if (options.offset !== null && options.limit !== null) {
       url += `?offset=${options.offset}&limit=${options.limit}`;
+    } else {
+      url += `?offset=0&limit=5`;
     }
 
     console.log(url);
