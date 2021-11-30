@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/pokedex/static/css/main.f2ffc105.chunk.css",
-    "main.js": "/pokedex/static/js/main.116ea3f4.chunk.js",
-    "main.js.map": "/pokedex/static/js/main.116ea3f4.chunk.js.map",
+    "main.css": "/pokedex/static/css/main.59917bb2.chunk.css",
+    "main.js": "/pokedex/static/js/main.d70d8f1b.chunk.js",
+    "main.js.map": "/pokedex/static/js/main.d70d8f1b.chunk.js.map",
     "runtime-main.js": "/pokedex/static/js/runtime-main.a19de44d.js",
     "runtime-main.js.map": "/pokedex/static/js/runtime-main.a19de44d.js.map",
-    "static/js/2.2409b17d.chunk.js": "/pokedex/static/js/2.2409b17d.chunk.js",
-    "static/js/2.2409b17d.chunk.js.map": "/pokedex/static/js/2.2409b17d.chunk.js.map",
+    "static/js/2.278f99c3.chunk.js": "/pokedex/static/js/2.278f99c3.chunk.js",
+    "static/js/2.278f99c3.chunk.js.map": "/pokedex/static/js/2.278f99c3.chunk.js.map",
     "static/js/3.0d8825da.chunk.js": "/pokedex/static/js/3.0d8825da.chunk.js",
     "static/js/3.0d8825da.chunk.js.map": "/pokedex/static/js/3.0d8825da.chunk.js.map",
     "index.html": "/pokedex/index.html",
-    "static/css/main.f2ffc105.chunk.css.map": "/pokedex/static/css/main.f2ffc105.chunk.css.map",
-    "static/js/2.2409b17d.chunk.js.LICENSE.txt": "/pokedex/static/js/2.2409b17d.chunk.js.LICENSE.txt",
+    "static/css/main.59917bb2.chunk.css.map": "/pokedex/static/css/main.59917bb2.chunk.css.map",
+    "static/js/2.278f99c3.chunk.js.LICENSE.txt": "/pokedex/static/js/2.278f99c3.chunk.js.LICENSE.txt",
     "static/media/bug.3713b29d.jpg": "/pokedex/static/media/bug.3713b29d.jpg",
     "static/media/bug.a84dfc24.svg": "/pokedex/static/media/bug.a84dfc24.svg",
+    "static/media/caret-back.94623a3c.svg": "/pokedex/static/media/caret-back.94623a3c.svg",
+    "static/media/caret-forward.c5199e43.svg": "/pokedex/static/media/caret-forward.c5199e43.svg",
     "static/media/dark.49846cba.svg": "/pokedex/static/media/dark.49846cba.svg",
     "static/media/dark.af2c9f86.jpg": "/pokedex/static/media/dark.af2c9f86.jpg",
     "static/media/dragon.84cada9c.jpg": "/pokedex/static/media/dragon.84cada9c.jpg",
@@ -51,8 +53,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a19de44d.js",
-    "static/js/2.2409b17d.chunk.js",
-    "static/css/main.f2ffc105.chunk.css",
-    "static/js/main.116ea3f4.chunk.js"
+    "static/js/2.278f99c3.chunk.js",
+    "static/css/main.59917bb2.chunk.css",
+    "static/js/main.d70d8f1b.chunk.js"
   ]
 }
