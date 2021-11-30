@@ -29,7 +29,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Explorer />} />
-      <Route path=":pokemon" element={<Pokemon />} />
+      <Route path=":pokemon" element={<Pokemon />}>
+        <Route path=":page" element={<Pokemon />} />
+      </Route>
     </Routes>
   );
 }

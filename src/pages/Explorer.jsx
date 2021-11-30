@@ -4,6 +4,9 @@ import CardGenerator from "../components/explorer/CardGenerator";
 
 // import useFetch from "../hooks/useFetch";
 
+import { ReactComponent as CaretBack } from "../images/ui/caret-back.svg";
+import { ReactComponent as CaretForward } from "../images/ui/caret-forward.svg";
+
 const DEFAULT_OFFSET = 0;
 const DEFAULT_LIMIT = 5;
 
@@ -96,13 +99,17 @@ const Explorer = () => {
   };
 
   return (
-    <div>
+    <div className="explorer">
       <CardGenerator data={data} />
 
       <nav>
         <Link to="/">Start</Link>
-        <button onClick={goBack}>{"<"}</button>
-        <button onClick={goForward}>{">"}</button>
+        <button onClick={goBack}>
+          <CaretBack />
+        </button>
+        <button onClick={goForward}>
+          <CaretForward />
+        </button>
         <Link to={`/?offset=${maxNumberOfResults - limit}&limit=${limit}`}>
           End
         </Link>

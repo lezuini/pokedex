@@ -1,3 +1,10 @@
+.card-container {
+  display: flex;
+  width: 272px;
+  height: 384px;
+  margin: 2rem;
+}
+
 .card {
   width: 272px;
   height: 384px;
@@ -8,7 +15,7 @@
   grid-template-rows: 224px 160px;
 
   overflow: hidden;
-  margin: 2rem;
+
   color: #222;
 
   position: relative;
@@ -51,6 +58,7 @@
       transition: filter 0.2s ease-in-out;
 
       &:hover {
+        transition: none;
         filter: brightness(1.125);
       }
 
@@ -144,6 +152,7 @@
   transition: filter 0.2s ease-in-out;
 
   &:hover {
+    transition: none;
     filter: brightness(1.25);
   }
 

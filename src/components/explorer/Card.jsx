@@ -38,6 +38,7 @@ import { ReactComponent as SVGWater } from "../../images/icons/water.svg";
 
 import Type from "./Type";
 import { useEffect, useState } from "react";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 
 const Card = ({ url }) => {
   const [data, setData] = useState(null);
@@ -165,37 +166,39 @@ const Card = ({ url }) => {
   };
 
   return (
-    <div className="card">
+    <>
       {data && (
-        <>
-          <div className="pictures">
-            <div className="background">
-              <img src={bgSource} alt="" />
+        <Link to={data.name} className="card-container">
+          <div className="card">
+            <div className="pictures">
+              <div className="background">
+                <img src={bgSource} alt="" />
+              </div>
+              <div className="pokemon">
+                <img
+                  src={source}
+                  alt=""
+                  className={loaded ? "ready" : undefined}
+                  onLoad={handleLoad}
+                  loading="lazy"
+                />
+              </div>
+              <div className="icon">{tp[data.types[0].type.name]}</div>
             </div>
-            <div className="pokemon">
-              <img
-                src={source}
-                alt=""
-                className={loaded ? "ready" : undefined}
-                onLoad={handleLoad}
-                loading="lazy"
-              />
-            </div>
-            <div className="icon">{tp[data.types[0].type.name]}</div>
-          </div>
-          <div className="info">
-            <div className="types">
-              {data.types.map((el, i) => {
-                return <Type type={el.type.name} key={i} />;
-              })}
-            </div>
+            <div className="info">
+              <div className="types">
+                {data.types.map((el, i) => {
+                  return <Type type={el.type.name} key={i} />;
+                })}
+              </div>
 
-            <h2>{`#${data.id}`}</h2>
-            <h3>{data.name[0].toUpperCase() + data.name.slice(1)}</h3>
+              <h2>{`#${data.id}`}</h2>
+              <h3>{data.name[0].toUpperCase() + data.name.slice(1)}</h3>
+            </div>
           </div>
-        </>
+        </Link>
       )}
-    </div>
+    </>
   );
 };
 
